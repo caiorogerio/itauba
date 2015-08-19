@@ -1,4 +1,1 @@
-bla
-<?php
-
-get_template_part( 'archieve', 'product' );
+<?php get_template_part( 'products' );

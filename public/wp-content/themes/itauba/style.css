@@ -1,0 +1,328 @@
+/*
+Theme Name: Itauba
+Theme URI: https://wordpress.org/themes/twentyfifteen/
+Author: Caio Rogerio
+Author URI: https://wordpress.org/
+Description: Itauba móveis theme
+Version: 0.1
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: itauba
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*
+Vermelho 1: #dc2a1b
+Vermelho 2: #bb261b
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* end reset */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+#masthead {
+    border-bottom: 5px solid #f00;
+    white-space: nowrap;
+}
+
+#masthead .site-branding {
+    display: inline-block;
+    height: 100px;
+    width: 33.3333%;
+}
+
+#masthead .site-branding .site-title {
+    height: 100%;
+    margin-left: 40px;
+}
+
+#masthead .site-branding .site-title a {
+    display: block;
+    height: 100%;
+    border-left: 1px solid #b3b3b3;
+    border-right: 1px solid #b3b3b3 ;
+    text-indent: -99999px;
+    background: transparent url(images/logo.png) no-repeat center;
+}
+
+#masthead #site-navigation {
+    display: inline-block;
+    width: 66.6666%;
+    vertical-align: bottom;
+    padding: 0;
+}
+
+#masthead #site-navigation ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    list-style: none;
+}
+
+#masthead #site-navigation ul li {
+    display: table-cell;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+#masthead #site-navigation ul li.current-menu-item {
+    color: #c30000;
+}
+
+
+/* home */
+#home-banner ol li {
+    position: relative;
+}
+
+#home-banner ol li img {
+    display: block;
+}
+
+#home-banner ol li .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#home-banner ol li .info:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-left: -0.25em;
+}
+
+#home-banner ol li .info div {
+    display: inline-block;
+    width: 25%;
+    min-height: 70%;
+    max-height: 80%;
+    vertical-align: middle;
+    padding: 25px 20px 20px 20px;
+    border-right: 5px solid #dc2a1b;
+    box-sizing: border-box;
+    background-color: rgba(220, 42, 27, 0.6);
+    color: #fff;
+}
+
+#home-banner ol li .info img {
+    width: 100%;
+}
+
+#home-banner ol li .info h2 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#home-banner ol li .info p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#home-banner ol li .info p.button a {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #fff;
+    color: #dc2a1b;
+    text-transform: uppercase;
+}
+
+#home-sections {
+    display: table;
+    table-layout: fixed;
+    background: #eeeeee;
+    padding: 0 20px;
+}
+
+#home-sections > section {
+    display: table-cell;
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding: 30px;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+#home-sections > section > h1 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#home-sections > section:first-child {
+    border-left: 1px solid #fff;
+}
+
+.content-area article {
+    padding: 50px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 18px;
+    text-align: justify;
+}
+
+.content-area article h1 {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content-area article p {
+    margin: 1em 0;
+}
+
+#colophon {
+    padding: 40px;
+    background: #000;
+}
+
+#colophon .site-info {
+    font-size: 12px;
+    line-height: 16px;
+    color: #b3b3b3;
+}
+
+/* contato */
+
+.wpcf7 input,
+.wpcf7 textarea {
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.wpcf7 textarea {
+    height: 100px;
+}
+
+.wpcf7 input:focus,
+.wpcf7 textarea:focus {
+    outline-color: #dc2a1b;
+}
+
+.wpcf7 input[type="submit"] {
+    -webkit-appearance: normal;
+    width: auto;
+    height: 40px;
+    border: 0;
+    margin-top: 40px;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #dc2a1b;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* produtos */
+.product-area main {
+    margin: 40px;
+    margin-left: 0;
+}
+
+#product-navigation h1 {
+    margin: 1em 0;
+    font-weight: bold;
+    
+}
+
+#product-navigation ul {
+    margin: 0;
+}
+
+#product-navigation ul ul {
+    margin-left: 10px;;
+}
+
+#product-lines {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+#product-display {
+    display: inline-block;
+    width: 900px;
+}
+
+.product-area article {
+    display: inline-block;
+    margin-left: 40px;
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul > li {
+    /*display: none;*/
+}
