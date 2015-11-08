@@ -3,15 +3,15 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<address>
-				Rua Caetano Pinto, 261<br>
-				Bras - São Paulo - SP<br>
-				Cep: 03041-000
+				<?= get_option('address1') ?><br>
+				<?= get_option('address2') ?><br>
+				<?= get_option('address3') ?>
 			</address>
 		</div><!-- .site-info -->
 
 		<ul>
-			<li><a href="tel:1132719096">11 3271-9096</a> / <a href="tel:1132715431">5431</a></li>
-			<li><a href="mailto:itauba@itaubamoveis.com.br">itauba@itaubamoveis.com.br</a></li>
+			<li class="phone"><?= get_option('phone') ?></li>
+			<li class="email"><a href="mailto:<?= get_option('email') ?>"><?= get_option('email') ?></a></li>
 		</ul>
 	</footer><!-- .site-footer -->
 

@@ -5,17 +5,9 @@
 			
 			<div id="home-banner">
 				<ol>
-					<li>
-						<img src="http://fakeimg.pl/1280x400/?text=Banner&font=lobster">
-						<div class="info">
-							<div>
-								<h2>Title</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue, justo at pharetra pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue, justo at pharetra pretium.</p>
-								<p class="button"><a href="#">Confira mais</a></p>
-							</div>
-						</div>
-					</li>
+					<?php dynamic_sidebar('home-banner') ?>
 				</ol>
+
 			</div>
 			
 			<div id="home-sections">

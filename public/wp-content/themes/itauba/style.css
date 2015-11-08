@@ -19,6 +19,8 @@ Vermelho 1: #dc2a1b
 Vermelho 2: #bb261b
 */
 
+@import url('fonts/typicons/typicons.css');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -128,8 +130,24 @@ a, a:hover {
 
 
 /* home */
-#home-banner ol li {
+
+#home-banner ol {
     position: relative;
+}
+
+#home-banner ol li {
+	position: relative;
+	margin-top: -400px;
+	opacity: 0;
+	transition: opacity ease 1s;
+}
+
+#home-banner ol li:first-child {
+	margin-top: 0;
+}
+
+#home-banner ol li.show {
+	opacity: 1;
 }
 
 #home-banner ol li img {
@@ -240,12 +258,43 @@ a, a:hover {
 #colophon {
     padding: 40px;
     background: #000;
+	overflow: hidden;
 }
 
 #colophon .site-info {
+	float: left;
     font-size: 12px;
     line-height: 16px;
     color: #b3b3b3;
+}
+
+#colophon > ul {
+	float: right;
+}
+
+#colophon > ul > li {
+	margin-bottom: 2px;
+	border-left: 3px solid #DF2F28;
+	padding: 10px;
+	font-size: 11px;
+	color: #fff;
+	background: #2F2F30;
+}
+
+#colophon > ul > li:before {
+	display: inline-block;
+	margin-right: 10px;
+	font-family: 'typicons';
+	font-size: 14px;
+	color: #DF2F28;
+}
+
+#colophon > ul > li.phone:before {
+	content: "\e0c4";
+}
+
+#colophon > ul > li.email:before {
+	content: "\e0a5";
 }
 
 /* contato */
@@ -283,7 +332,11 @@ a, a:hover {
 /* produtos */
 .product-area main {
     margin: 40px;
-    margin-left: 0;
+}
+
+#product-navigation {
+	display: inline-block;
+	vertical-align: top;
 }
 
 #product-navigation h1 {
@@ -297,7 +350,15 @@ a, a:hover {
 }
 
 #product-navigation ul ul {
-    margin-left: 10px;;
+    margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#product-navigation ul ul li:before {
+	display: inline-block;
+	content: "-";
+	vertical-align: middle;
+	margin-right: 5px;
 }
 
 #product-lines {
@@ -308,12 +369,13 @@ a, a:hover {
 
 #product-display {
     display: inline-block;
-    width: 900px;
+    width: 960px;
 }
 
 .product-area article {
     display: inline-block;
     margin-left: 40px;
+	margin-bottom: 40px;
     border: 1px solid #eee;
     padding: 15px;
     text-align: center;
